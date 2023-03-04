@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="corporate">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Projects</title>
-    <!--Tailwind css add file-->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assienment 6</title>
+    <!--Bootstrap file add-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--fontawesome-->
     <script src="https://kit.fontawesome.com/067bbb7b00.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--Header open-->
-     <header>
-        <h1 class="text-center text-3xl font-bold mt-3">AI  Universe  Hub</h1>
-        <!--Sort By Date btn-->
-        <div class="flex justify-center mt-4">
-          <button class="btn bg-red-500 rounded-lg text-white p-3 text-xl font-bold">
-             Sort By Date
-          </button>
-        </div>
-     </header>
-    <!--Header colsed-->
-    <!--main open-->
-     <main>
-      <!--Card Section add-->
-      <section id="Section-Card" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:px-12">
-          
-      </section>
-     </main>
-    <!--main colsed-->
-    <!--footer open-->
-    <footer>
-        <div class="flex justify-center mt-4 mb-5">
-            <button onclick="ShowAllCard()" class="btn bg-red-500 rounded-lg text-white p-3 text-xl font-bold">
-               Show More
-            </button>
+   <!--Header open-->
+    <header>
+      <h1 class="text-center text-3xl fs-bold mt-3">AI  Universe  Hub</h1>
+    <!--Sort By Date btn-->
+     <div class="d-grid justify-content-center ">
+        <button type="button" class="btn btn-danger">Sort By Date</button>
+     </div>
+    </header>
+  <!--Header colsed-->
+  <!--main open-->
+  <main>
+  <!--Card Section add-->
+    <section id="Section-Card" class="container mx-auto row row-cols-1 row-cols-md-3 g-4 mt-3">   
+   
+    </section>
+    <!--Modal Section-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-    </footer>
-    <!--footer colsed-->
+          <div id="Modal-box2" class="modal-body">
 
-    <!--javascript file add-->
-    <script src="api.js"></script>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!--main colsed-->
+  <!--footer open-->
+  <footer>
+       <div class="d-grid justify-content-center mt-3">
+           <button onclick="ShowAllCard()" type="button" class="btn btn-danger">Show More</button>
+        </div>
+  </footer>
+  <!--footer colsed-->
+
+  <!--javascript file add-->
+ <script src="js/bootstrap.min.js"></script> 
+ <script src="js/index.js"></script> 
+
 </body>
 </html>
